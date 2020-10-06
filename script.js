@@ -1,6 +1,12 @@
 // API: 9a14accd96c70fa4fba63f1bdc2c6c06
 
-$.getJSON("http://api.openweathermap.org/data/2.5/forecast?q=Minneapolis&units=imperial&appid=9a14accd96c70fa4fba63f1bdc2c6c06", function (data) {
+var city = $("citySearch").val()
+
+$("#searchBtn").click(function() {
+    localStorage.setItem("pastBtn");
+});
+
+$.getJSON("http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=9a14accd96c70fa4fba63f1bdc2c6c06", function (data) {
     console.log(data);
 
     var city = data.city.name;
