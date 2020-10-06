@@ -1,0 +1,22 @@
+.lowUV {
+    color: white;
+    background-color: green;
+}
+
+.moderateUV {
+    background-color: black;
+}
+
+.highUV {
+    background-color: orange;
+}
+
+.veryHighUV {
+    color: white;
+    background-color: red;
+}
+
+.extremeUV {
+    color: white;
+    background-color: violet;
+}
