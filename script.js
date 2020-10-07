@@ -26,7 +26,18 @@ $("#searchBtn").click(function () {
         $.getJSON("http://api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + longitude + "&appid=9a14accd96c70fa4fba63f1bdc2c6c06", function (data) {
             console.log(data);
             var uvDisplay = "UV Index: " + data.value;
-
+            var uvValue = document.querySelector(".uvDisplay");
+            if (data.value <= 2) {
+                uvValue.style.color = "green";
+            } else if (data.value <= 5) {
+                uvValue.style.color = "gold";
+            } else if (data.value <= 7) {
+                uvValue.style.color = "orange";
+            } else if (data.value <= 10) {
+                uvValue.style.color = "red";
+            } else {
+                uvValue.style.color = "purple";
+            }
             $('.uvDisplay').append(uvDisplay);
         });
 
@@ -93,8 +104,4 @@ $("#searchBtn").click(function () {
 
     });
 
-
-
 });
-
-//dayFive
