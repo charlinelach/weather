@@ -8,6 +8,8 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link src="style.css">
+    </script>
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -19,7 +21,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-   
+
     <title>Weather Dashboard</title>
     <!-- Tree icon for the title -->
     <link rel="icon" href="https://icons.iconarchive.com/icons/iconsmind/outline/128/Tree-3-icon.png" type="image/png">
@@ -40,7 +42,8 @@
             <div class="col-3">
                 <p><b>Search for a City:</b></p>
                 <form class="form-inline">
-                    <input id="citySearch" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <input id="citySearch" class="form-control mr-sm-2" type="search" placeholder="Search"
+                        aria-label="Search">
                     <button id="searchBtn" type="button" class="btn btn-outline-primary"><svg width="1em" height="1em"
                             viewBox="0 0 16 16" class="bi bi-brightness-high" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
@@ -65,34 +68,79 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="city"></h4>
-                        <p class="date"></p>
+                        <p id="date"></p>
                         <img class="icon">
-                        <b><p class="temp"></p></b>
+                        <b>
+                            <p class="temp"></p>
+                        </b>
                         <p class="humidity"></p>
                         <p class="windSpeed"></p>
                         <p class="uvDisplay"></p>
-<!-- Make sure this happens
-if (uvInfo <= 2) {
-} else if (uvInfo <= 5) {
-} else if (uvInfo <= 7) {
-} else if (uvInfo <= 10) {
-} else {
-} -->
-
                     </div>
                 </div>
 
-                <!-- 5 days here -->
+                <div class="row">
+                    <div class="col">
+                        <br>
+                        <h4>5 Day Forecast</h4>
+                    </div>
+                </div>
+
+                <!-- 5 forecast days here -->
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="dateOne"></h5>
+                            <p class="card-text">
+                                <img class="iconOne">
+                            <p class="tempOne"></p>
+                            <p class="humidityOne"></p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 id="dayTwo"></h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 id="dayThree"></h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 id="dayFour"></h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 id="dayFive"></h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-
         </div>
-    </div>
 
-    <!-- jQuery JS -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Code to the JavaScript File -->
-    <script src="script.js"></script>
+        <!-- jQuery JS -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Code to the JavaScript File -->
+        <script src="script.js"></script>
 
 </body>
 
