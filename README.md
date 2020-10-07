@@ -11,6 +11,8 @@ Repository: https://github.com/charlinelach/weather
 
 ## Usage Instructions
 To utilize this website/application, end users may access it via [deploy link](https://charlinelach.github.io/weather/). From this website, the user can look at the weather for a city and easily navigate to past weather searches.
+<br>
+This application will display the city's name, dates (for each weather day), weather icon, temperature, humidity, wind speed, and UV index.
 
 ![Screenshot of the Weather Dashboard](bangkokScreenshot.jpg)
 
