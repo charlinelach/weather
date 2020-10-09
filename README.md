@@ -7,6 +7,9 @@ Deployed at: https://charlinelach.github.io/weather/
 <br>
 Repository: https://github.com/charlinelach/weather
 
+## Technologies
+HTML, CSS, JavaScript
+
 # Development
 
 ## Usage Instructions
@@ -30,3 +33,5 @@ And a big thank you to fellow students, asking and answering questions before an
 
 # License Information
 The weather information is gathered from ©[OpenWeather](https://openweathermap.org/) and its API provision.
+<br>
+MIT License Copyright © 2020
